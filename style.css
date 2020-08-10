@@ -1,0 +1,219 @@
+body{
+  margin:0px;
+  width:100%;
+   
+}
+nav ul li{
+  list-style-type:none;
+  float:left;
+  padding-right:2em;
+  padding-bottom:0.09em; 
+  color:#189AB4;
+}
+nav ul{
+  float:right;
+  
+}
+nav ul li a{
+  text-decoration:none;
+  color:#189AB4
+}
+nav{
+  width:100%;
+  height:50px;
+  background-color:#05445E;
+  position:fixed;
+}
+section{
+ background-color:#41729F;
+}
+#img{
+  width:20%;
+  
+}
+
+.home{
+  text-align:center;
+  font-size:40px;
+  color:#ffffff;
+  display:table;
+  
+  width:100%;
+  height:100vh;
+  background-color:#5885AF; 
+}
+.home .inner{
+display:table-cell;
+ vertical-align:middle;
+}
+.about{
+ background-image:url('https://repositioninc.com/wp-content/uploads/2017/01/bn-blog.jpg');
+  display:table;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  height:100vh;
+  width:100%;
+  
+  
+}
+.about .inner{
+  display:table-cell;
+  vertical-align:middle;
+  width:100%;
+  padding:50px;
+  background-color:rgba(0,0,0,0.2);
+  
+}
+.about .inner h2{
+  font-size:35px;
+  color: #e0dada;
+}
+.about .inner p{
+  font-size:25px;
+  line-height:50px;
+  color: #ffffff;
+  width: 70%;
+  background-color:rgba(0,0,0,0.2);
+}
+.education{
+  background-image:url('https://i.pinimg.com/originals/7a/d8/70/7ad8705bf1126d915299924f4971666e.jpg') ;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; 
+  display:table;
+  height:100vh;
+  width:100%;
+}
+.education .inner{
+  background-color:rgba(0,0,0,0.4);
+}
+.education .inner::after{
+ content: "";
+  clear: both;
+}
+.education .inner , .hobbies .inner , .skill .inner , .contact .inner{
+  padding:50px;
+  display:table-cell;
+  vertical-align:middle;
+}
+.education .inner h2 , .hobbies .inner h2 , .skill h2 ,.contact h2{
+  font-size:35px;
+}
+.education .inner div{
+  font-size:20px;
+}
+.education .inner div , .hobbies .inner div{
+  width:40%;
+  margin-left:5px;
+  margin-right:50px;
+  text-align:center;
+  float:left;
+  
+}
+.hobbies .inner p , .contact .inner p{
+  font-size:19px;
+  font-family:cursive;
+}
+.hobbies{
+ background-color: #36096d;
+background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+
+}
+.hobbies , .skill , .contact{
+  display:table;
+  height:100vh;
+  width:100%;
+}
+.skill{
+  background-image:url('https://images.treasuryandrisk.com/contrib/content/uploads/sites/411/2019/07/2019-07-24-Lightbulb-with-gears_616x372.png');
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+}
+.skill .inner ul{
+  font-size:20px;
+}
+.skill .inner {
+  background-color:rgba(0,0,0,0.2);
+}
+.contact .inner{
+  background-color:rgba(0,0,0,0.1);
+
+}
+.contact{
+  background-image:url('https://th.bing.com/th/id/OIP.9Aq-1aGxQ5NocEvgCa52igHaE8?pid=Api&w=5000&h=3334&rs=1');
+   background-repeat:no-repeat;
+  background-size:100% 100%;
+}
+.contact .inner div{
+  width:15%;
+  margin-left:5px;
+  margin-right:50px;
+  text-align:center;
+  float:left;
+}
+
+/*responsive designing*/
+@media (min-width:320px) and (max-width:767px){
+  html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  .nav {
+    height: 4em;
+  }
+  
+  .home .inner img{
+    padding-top:70px;
+    
+  }.about .inner p{
+    width:100%;
+    text-align:justify;
+  } .education .inner div{
+    width:80%;
+    border:2px solid #d3d3d3;
+    
+  }
+  .hobbies .inner div{
+    width:100%;
+    border:2px solid #d3d3d3;
+  }
+  .contact .inner div{
+    width:100%;
+    border:2px none #d3d3d3;
+  }
+}
+@media (width:768px){
+  .home .inner img{
+    padding-top:70px;
+  }
+  .about .inner p{
+    text-align:justify;
+  }
+  .contact .inner div{
+    width:10%;
+  }
+}
+@media (min-width:769px) and (max-width:1440px){
+  .home .inner img{
+    padding-top:70px;
+  }
+  .contact .inner div{
+    width:10%;
+  }
+}
+@media (min-width:1441px) and (max-width:4000px){
+  .home .inner img{
+    padding-top:70px;
+  }
+  .about .inner h2 , .education .inner h2 , .hobbies .inner h2 , .skill .inner h2 , .contact .inner h2{
+    font-size:50px;
+  }
+  .about .inner p{
+    font-size:40px;
+  }
+  .education .inner div , .contact .inner p , .skill .inner ul , .hobbies .inner p{
+    font-size:30px;
+  }
+}
